@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FizzBuzz</title>
+    <style type="text/css">
+      #output {
+        font-family: monospace;
+      }
+    </style>
+    <script type="text/javascript">
+      /**
+       * Some library code to help you out
+       */
+
+      /**
+       * Outputs text to the page
+       * @param {string} text     HTML string to output
+       * @param {string} lineEnd  end of line (defaults to a line break)
+       * @returns {void}
+       */
+      const outputText = (text, lineEnd = '<br />') => {
+        const div = document.getElementById('output');
+        div.innerHTML = div.innerHTML + text + lineEnd;
+      };
+
+      /**
+       * Determines whether a number is a multiple of another
+       * @param {number} factor            are we a multiple of this number?
+       * @param {number} possibleMultiple  number to test
+       * @returns {bool} whether `possibleMultiple` is a multiple of `factor`
+       */
+      const isMultiple = (factor, possibleMultiple) => {
+        // TODO
+        // If you don't know how to fill this in then we're happy to supply it.
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>FizzBuzz</h1>
+    </header>
+    <div>
+      Write a script that prints the numbers from 1 to 100 inclusive.
+      If a number is a multiple of 5, print "Fizz" instead of the number.
+      If a number is a multiple of 7, print "Buzz" instead of the number.
+      If a number is a multiple of both 5 and 7, print "FizzBuzz".
+    </div>
+    <hr />
+    <div id="output"></div>
+    <script type="text/javascript">
+      // Enter your code here
+      outputText(1);
+      outputText(2);
+    </script>
+  </body>
+</html>
