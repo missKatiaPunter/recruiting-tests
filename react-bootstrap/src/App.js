@@ -1,16 +1,16 @@
 import React from 'react';
-import { Breadcrumb } from 'react-bootstrap';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
+
 
 const App = () => (
-  <div className="App">
-    <Breadcrumb>
-      <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-      <Breadcrumb.Item href="http://getbootstrap.com/components/#breadcrumbs">
-        Library
-      </Breadcrumb.Item>
-      <Breadcrumb.Item active>Data</Breadcrumb.Item>
-    </Breadcrumb>
-  </div>
+  <React.Fragment>
+    <Header />
+    <Main />
+    <Footer />
+  </React.Fragment>
 );
 
 export default App;
